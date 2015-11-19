@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/single">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/username"
+    android:layout_marginTop="10dp"
+    android:id="@+id/username"
+    android:textColor="@color/style_color_primary_dark"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/foto"
+        android:background="@drawable/si"
+        android:layout_alignParentStart="true"
+        android:contentDescription="imagem_noticia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/btn_context_menu_pressed"
+
+        android:text="@string/titulo"
+        android:layout_alignTop="@+id/foto"
+        android:layout_toEndOf="@+id/foto"
+        android:layout_marginStart="5dp"
+        android:background="@color/btn_default_light_pressed"
+        android:id="@+id/title" />
+
+    <TextView
+        android:background="@color/btn_default_light_pressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/btn_context_menu_pressed"
+
+        android:text="@string/menssagem"
+        android:layout_below="@+id/foto"
+        android:layout_alignStart="@+id/foto"
+        android:layout_marginTop="5dp"
+        android:id="@+id/message"/>
+</RelativeLayout>
